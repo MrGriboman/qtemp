@@ -60,7 +60,7 @@ void MainWindow::setupDatabase() {
     db.setHostName("localhost");
     db.setDatabaseName("TEMP_DATABASE");
     db.setUserName("mrgriboman");
-    db.setPassword("frog1324");
+    db.setPassword(password);
 
     if (!db.open()) {
         QMessageBox::critical(this, "Database Error", db.lastError().text());
